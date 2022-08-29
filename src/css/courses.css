@@ -1,10 +1,16 @@
 .course {
-  width: 18%;
-  margin: 1%;
+  width: 100%;
+  margin: 0%;
   padding: 0px;
+}
+.swiper-wrapper {
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
 }
 .subject-info {
   border: 1px solid black;
+  overflow: hidden;
 }
 .explore-more {
   padding: 1%;
@@ -47,4 +53,52 @@
 }
 .price-delete {
   text-decoration: line-through;
+}
+.swiper {
+  position: relative;
+}
+.next {
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/right-icon.png");
+  background-size: 100% 100%;
+  border: 0px;
+  position: absolute;
+  right: 0%;
+  bottom: 50%;
+  z-index: 100;
+  opacity: 0.4;
+  background-color: transparent;
+}
+.prev {
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/left-icon.png");
+  background-size: 100% 100%;
+  border: 0px;
+  position: absolute;
+  left: 0%;
+  bottom: 50%;
+  z-index: 100;
+  opacity: 0.4;
+  background-color: transparent;
+}
+.prev:hover,
+.next:hover {
+  opacity: 1;
+}
+.card:hover {
+  background-color: rgb(244, 238, 239);
+  transition: 1s;
+}
+
+@media only screen and (max-width: 570px) {
+  .subject-info {
+    width: 80%;
+    margin: auto;
+  }
+  .course {
+    width: 80%;
+    margin: auto;
+  }
 }

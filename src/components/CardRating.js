@@ -35,7 +35,10 @@ export default function CardRating(props) {
         //push the empty stars in it
         stars.push(<i key = {index} class=" star fa-regular fa-star"></i>);
         index++;
-    }    
+    }
+    /*card rating consists of :
+    1- course rating 
+    2- array of stars*/    
   return (
     <div className='d-flex'>
         <span className = 'rating'>{props.rating}</span>

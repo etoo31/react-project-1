@@ -1,6 +1,10 @@
 import React from "react";
 
 export default function CardPrice(props) {
+  /*We have two options to display course price:
+  1- if we have a offer then we display offer price first and the actual offer with a line through it 
+  2- if we have no offer then we'll display the actual price only
+  */
     //if there is offer 
   if (props.offer) {
     return (

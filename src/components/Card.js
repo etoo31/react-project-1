@@ -7,7 +7,16 @@ import CardRating from "./CardRating";
 
 export default class Card extends Component {
   render() {
-    console.log(this.props.imageSrc);
+    /**
+     * the card cosnsists of:
+     * 1- Card image
+     * 2- card header
+     * 3- Card Author
+     * 4- Card Rating
+     * 5- Card Price
+     *
+     * And there is a div with card class conatin all of these.
+     */
     return (
       <div className="card course">
         <CardImg {...this.props}></CardImg>

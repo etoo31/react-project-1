@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import SubjectHeader from "./SubjectHeader";
 import Card from "./Card";
+import SwiperBtns from "./SwiperBtns";
 
 export default class SubjectInfo extends Component {
-    //courses data
+  //courses data
   courses = [
     {
       imageSrc: "python1.png",
@@ -117,14 +118,24 @@ export default class SubjectInfo extends Component {
     },
   ];
   render() {
-    //get displayed courses and make a card for each course
+    //get displayed courses and make a card and a slide for each course
     const displayedCourses = this.courses.map((course) => (
-      <Card key={course.imageSrc} {...course}></Card>
+      <div className="swiper-slide col-lg-3 col-md-4 col-sm-6">
+        <Card key={course.imageSrc} {...course}></Card>
+      </div>
     ));
+    /*subject info consits of:
+    1-container
+    2-Subject Header
+    3- Swiper 
+    */
     return (
       <div className="container subject-info">
         <SubjectHeader></SubjectHeader>
-        <div className="container row">{displayedCourses}</div>
+        <div className="swiper">
+          <div className="swiper-wrapper row">{displayedCourses}</div>
+          <SwiperBtns></SwiperBtns>
+        </div>
       </div>
     );
   }

@@ -10,7 +10,9 @@ function importAll(r) {
 const images = importAll(require.context('../img', false, /\.(png|jpe?g|svg)$/));
 
 export default function CardImg(props) {
-  console.log("card img = " + props.imageSrc);
+  /**
+   * it conatins only div with class course-img and image inside it 
+   */
   return (
     <div className = "course-img">
     <img
