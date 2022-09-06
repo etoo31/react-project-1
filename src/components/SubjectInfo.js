@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 import SubjectHeader from "./SubjectHeader";
 import Card from "./Card";
-import SwiperBtns from "./SwiperBtns";
-
-export default class SubjectInfo extends Component {
+import { SwiperSlide } from "swiper/react";
+import CreateSwiper from "./CreateSwiper";
+function SubjectInfo() {
   //courses data
-  courses = [
+  const courses = [
     {
       imageSrc: "python1.png",
       alt: "Phyton-image",
@@ -117,26 +117,24 @@ export default class SubjectInfo extends Component {
       offerPrice: 269.99,
     },
   ];
-  render() {
-    //get displayed courses and make a card and a slide for each course
-    const displayedCourses = this.courses.map((course) => (
-      <div className="swiper-slide col-lg-3 col-md-4 col-sm-6">
-        <Card key={course.imageSrc} {...course}></Card>
-      </div>
-    ));
-    /*subject info consits of:
-    1-container
-    2-Subject Header
-    3- Swiper 
-    */
-    return (
-      <div className="container subject-info">
-        <SubjectHeader></SubjectHeader>
-        <div className="swiper">
-          <div className="swiper-wrapper row">{displayedCourses}</div>
-          <SwiperBtns></SwiperBtns>
-        </div>
-      </div>
-    );
-  }
+
+  //get displayed courses and make a card and a slide for each course
+  const displayedCourses = courses.map((course) => (
+    <SwiperSlide key={course.imageSrc}>
+      <Card {...course}></Card>
+    </SwiperSlide>
+  ));
+  /*subject info consits of:
+  1-container
+  2-Subject Header
+  3- Swiper 
+  */
+  return (
+    <div className="container subject-info">
+      <SubjectHeader></SubjectHeader>
+      <CreateSwiper>{displayedCourses}</CreateSwiper>
+    </div>
+  );
 }
+
+export default SubjectInfo;

@@ -18,7 +18,7 @@ export default class Card extends Component {
      * And there is a div with card class conatin all of these.
      */
     return (
-      <div className="card course">
+      <div className="card course w-100 h-100">
         <CardImg {...this.props}></CardImg>
         <CardHeader {...this.props}></CardHeader>
         <CardAuthor {...this.props}></CardAuthor>

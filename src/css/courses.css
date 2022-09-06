@@ -54,9 +54,8 @@
 .price-delete {
   text-decoration: line-through;
 }
-.swiper {
-  position: relative;
-}
+
+/*Swiper css*/
 .next {
   width: 40px;
   height: 40px;
@@ -94,13 +93,3 @@
   transition: 1s;
 }
 
-@media only screen and (max-width: 570px) {
-  .subject-info {
-    width: 80%;
-    margin: auto;
-  }
-  .course {
-    width: 80%;
-    margin: auto;
-  }
-}
