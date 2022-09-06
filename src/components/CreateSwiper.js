@@ -1,8 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Navigation } from "swiper";
 
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper } from "swiper/react";
 import SwiperBtns from "./SwiperBtns";
 
 // Import Swiper styles
@@ -12,27 +12,47 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 function CreateSwiper({ children }) {
+  //state to change go to another slide
+  console.log(children);
   const [swiper, setSwiper] = useState(false);
-  const navigationPrevRef = React.useRef(null)
-  const navigationNextRef = React.useRef(null)
+
+  //swiper btns refs
+  const navigationPrevRef = React.useRef(null);
+  const navigationNextRef = React.useRef(null);
   return (
     <Swiper
       // install Swiper modules
-      modules={[Navigation, A11y]}
+      modules={[Navigation]}
       spaceBetween={30}
       slidesPerView={5}
+      loopFillGroupWithBlank={true}
       navigation={{
         prevEl: navigationPrevRef.current,
         nextEl: navigationNextRef.current,
       }}
-      onSwiper={(swiper) => console.log(swiper)}
+      onSwiper={(swiper) =>
+        setTimeout(() => {
+          // Override prevEl & nextEl now that refs are defined
+          swiper.params.navigation.prevEl = navigationPrevRef.current;
+          swiper.params.navigation.nextEl = navigationNextRef.current;
+
+          // Re-init navigation
+          swiper.navigation.destroy();
+          swiper.navigation.init();
+          swiper.navigation.update();
+          console.log(swiper);
+        })
+      }
       onSlideChange={() => {
         setSwiper(!swiper);
         console.log(swiper);
       }}
     >
       {children}
-      <SwiperBtns next = {navigationNextRef} prev = {navigationPrevRef}></SwiperBtns>
+      <SwiperBtns
+        next={navigationNextRef}
+        prev={navigationPrevRef}
+      ></SwiperBtns>
     </Swiper>
   );
 }
