@@ -1,6 +1,6 @@
 import "./App.css";
 import "./css/courses.css";
-import SubjectInfo from "./components/SubjectInfo";
+import SubjectInfo from "./components/home/SubjectInfo";
 
 function App() {
   return (

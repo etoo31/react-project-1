@@ -7,7 +7,7 @@ function importAll(r) {
   return images;
 }
 //array of imported images
-const images = importAll(require.context('../img', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../img', false, /\.(png|jpe?g|svg)$/));
 
 export default function CardImg(props) {
   /**
