@@ -18,10 +18,13 @@ function NavBar() {
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <i class="fa-solid fa-bars"></i>
+        <i className="fa-solid fa-bars"></i>
       </button>
       {/*Nav Bar Items*/}
-      <ul className="nav-items" id="navbarSupportedContent">
+      <ul
+        className="nav-items navbarSupportedContent"
+        id="navbarSupportedContent"
+      >
         {/*Category link*/}
         <li>
           <a href="#" className="nav-link categories">

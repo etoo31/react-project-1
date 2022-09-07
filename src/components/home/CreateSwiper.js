@@ -26,6 +26,28 @@ function CreateSwiper({ children }) {
       spaceBetween={30}
       slidesPerView={5}
       loopFillGroupWithBlank={true}
+      //break points
+      breakpoints={{
+        300: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 500px
+        500: {
+          slidesPerView: 2,
+        },
+        // when window width is >= 768px
+        700: {
+          slidesPerView: 3,
+        },
+        // when window width is >= 800px
+        1100: {
+          slidesPerView: 4,
+        },
+        // when window width is >= 100px
+        1200: {
+          slidesPerView: 5,
+        },
+      }}
       navigation={{
         prevEl: navigationPrevRef.current,
         nextEl: navigationNextRef.current,
