@@ -24,7 +24,7 @@ function CreateSwiper({ children }) {
       // install Swiper modules
       modules={[Navigation]}
       spaceBetween={30}
-      slidesPerView={5}
+      slidesPerView={1}
       loopFillGroupWithBlank={true}
       //break points
       breakpoints={{
