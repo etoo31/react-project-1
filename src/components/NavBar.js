@@ -12,7 +12,7 @@ function NavBar() {
       <button
         className="navbar-toggler udemy-menue"
         type="button"
-        data-bs-toggle="nav-items"
+        data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent"
         aria-expanded="false"
@@ -21,10 +21,7 @@ function NavBar() {
         <i className="fa-solid fa-bars"></i>
       </button>
       {/*Nav Bar Items*/}
-      <ul
-        className="nav-items navbarSupportedContent"
-        id="navbarSupportedContent"
-      >
+      <ul className="nav-items">
         {/*Category link*/}
         <li>
           <a href="#" className="nav-link categories">

@@ -1,14 +1,15 @@
 import "./App.css";
 import "./css/courses.css";
 import "./css/nav.css";
-import SubjectInfo from "./components/home/SubjectInfo";
 import NavBar from "./components/NavBar";
+import Router from "./hooks/Router";
+import HomePage from "./Pages/HomePage";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <SubjectInfo></SubjectInfo>
+      <Router></Router>
     </div>
   );
 }

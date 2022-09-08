@@ -3,6 +3,9 @@ body {
   margin: 0px;
   overflow: auto;
 }
+.collapse {
+  display: block;
+}
 .nav {
   width: 100%;
   background-color: #fff;
