@@ -1,6 +1,7 @@
 import "./App.css";
 import "./css/courses.css";
 import "./css/nav.css";
+import "./css/head.css";
 import NavBar from "./components/NavBar";
 import Router from "./hooks/Router";
 import DataFetching from "./hooks/DataFetching";

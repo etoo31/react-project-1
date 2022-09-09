@@ -1,0 +1,180 @@
+/* Head- section*/
+.head-section {
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  background-color: #f2f2f296;
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.head-note {
+  background-color: #ffffff;
+  /* height: 32%; */
+  width: 26%;
+  padding: 20px;
+  position: absolute;
+  top: 30%;
+  left: 9%;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border: rgba(0, 0, 0, 0.1) solid 1px;
+}
+.alarm {
+  background-size: 100% 100%;
+  background-image: url(../img/alarm.png);
+  width: 38%;
+  height: 56%;
+  position: absolute;
+  right: 7%;
+  bottom: 24%;
+}
+.abroad-courses-section {
+  margin: auto;
+  width: 80;
+}
+/*================================ 1000px ===============================*/
+@media only screen and (max-width: 1000px) {
+  .head-section {
+    width: 100%;
+    height: 443px;
+    margin: auto;
+    background-color: #f2f2f296;
+    display: flex;
+    position: relative;
+  }
+  .head-note {
+    background-color: #ffffff;
+    /* height: 34%; */
+    padding: 20px;
+    width: 37%;
+    position: absolute;
+    top: 20%;
+    left: 19px;
+  }
+  .alarm {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 16%;
+  }
+}
+
+/* =================== 700px ========================================*/
+@media only screen and (max-width: 700px) {
+  /* Head- section*/
+  .head-section {
+    width: 100%;
+    height: 605px;
+    margin: 0% auto;
+    background-color: #f2f2f296;
+    display: flex;
+    position: relative;
+  }
+  .head-note {
+    background-color: #ffffff;
+    /* height: 20%; */
+    width: 71%;
+    padding: 20px;
+    position: absolute;
+    top: 69%;
+    left: 11%;
+  }
+  .alarm {
+    width: 60%;
+    height: 64%;
+    position: absolute;
+    right: 20%;
+    top: 6%;
+  }
+}
+
+/* =================== 600px ========================================*/
+@media only screen and (max-width: 600px) {
+  /* Head- section*/
+  .head-section {
+    width: 100%;
+    height: 612px;
+    margin: auto;
+    background-color: #f2f2f296;
+    display: flex;
+    position: relative;
+  }
+  .head-note {
+    background-color: #ffffff;
+    /* height: 23%; */
+    width: 76%;
+    padding: 20px;
+    position: absolute;
+    top: 69%;
+    left: 11%;
+  }
+  .alarm {
+    width: 60%;
+    height: 64%;
+    position: absolute;
+    right: 20%;
+    top: 1%;
+  }
+}
+
+/* =================== 500px ========================================*/
+@media only screen and (max-width: 500px) {
+  /* Head- section*/
+  .head-section {
+    width: 100%;
+    height: 557px;
+    margin: auto;
+    background-color: #f2f2f296;
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+  }
+  .head-note {
+    background-color: #ffffff;
+    /* height: 30%; */
+    width: 81%;
+    padding: 20px;
+    position: absolute;
+    top: 337px;
+    left: 10%;
+  }
+  .alarm {
+    width: 63%;
+    height: 50%;
+    position: absolute;
+    right: 18%;
+    top: 9%;
+  }
+}
+
+/* =================== 300px ========================================*/
+@media only screen and (max-width: 300px) {
+  /* Head- section*/
+  .head-section {
+    width: 100%;
+    height: 581px;
+    margin: auto;
+    background-color: #f2f2f296;
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+  }
+  .head-note {
+    background-color: #ffffff;
+    /* height: 33%; */
+    width: 98%;
+    padding: 16px;
+    position: absolute;
+    top: 365px;
+    left: 2px;
+  }
+  .alarm {
+    /* position: absolute; */
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    right: 0px;
+    top: 52px;
+  }
+}
