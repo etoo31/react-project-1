@@ -1,5 +1,4 @@
 import React from "react";
-import udemyIcon from "../img/Udemy-icon.png";
 function NavBar() {
   return (
     // Nav Bar
