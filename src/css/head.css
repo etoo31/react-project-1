@@ -10,23 +10,18 @@
 }
 .head-note {
   background-color: #ffffff;
-  /* height: 32%; */
-  width: 26%;
+  width: 35%;
   padding: 20px;
   position: absolute;
-  top: 30%;
+  top: 9%;
   left: 9%;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px rgb(0 0 0 / 10%);
   border: rgba(0, 0, 0, 0.1) solid 1px;
 }
 .alarm {
-  background-size: 100% 100%;
-  background-image: url(../img/alarm.png);
-  width: 38%;
-  height: 56%;
   position: absolute;
-  right: 7%;
-  bottom: 24%;
+  right: -59%;
+  bottom: 0%;
 }
 .abroad-courses-section {
   margin: auto;
@@ -52,11 +47,10 @@
     left: 19px;
   }
   .alarm {
-    width: 50%;
-    height: 50%;
     position: absolute;
-    right: 0;
+    right: 94px;
     top: 16%;
+    width: 35%;
   }
 }
 
@@ -81,11 +75,10 @@
     left: 11%;
   }
   .alarm {
-    width: 60%;
-    height: 64%;
     position: absolute;
-    right: 20%;
+    right: 22%;
     top: 6%;
+    width: 54%;
   }
 }
 
@@ -110,11 +103,10 @@
     left: 11%;
   }
   .alarm {
-    width: 60%;
-    height: 64%;
     position: absolute;
-    right: 20%;
-    top: 1%;
+    right: 22%;
+    top: 6%;
+    width: 54%;
   }
 }
 
@@ -140,11 +132,10 @@
     left: 10%;
   }
   .alarm {
-    width: 63%;
-    height: 50%;
     position: absolute;
-    right: 18%;
-    top: 9%;
+    right: 17%;
+    top: 1%;
+    width: 65%;
   }
 }
 
@@ -170,11 +161,9 @@
     left: 2px;
   }
   .alarm {
-    /* position: absolute; */
-    width: 100%;
-    height: 50%;
     position: absolute;
-    right: 0px;
-    top: 52px;
+    right: 3%;
+    top: 14%;
+    width: 90%;
   }
 }

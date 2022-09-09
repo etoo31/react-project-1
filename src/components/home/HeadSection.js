@@ -1,4 +1,5 @@
 import React from "react";
+import alarmImage from "../../img/alarm1.png";
 
 function HeadSection() {
   return (
@@ -10,8 +11,11 @@ function HeadSection() {
           <p>Courses start at E£169.99. Get your new-student offer now.</p>
         </div>
         {/*Alarm image*/}
-        <div className="alarm"></div>
+        <div className="container alarm">
+          <img src={alarmImage} alt="alarm" className="img-fluid"></img>
+        </div>
       </div>
+      {/* aborad courses container*/}
       <div className="container mt-4">
         <h1>A broad selection of courses</h1>
         <p>
