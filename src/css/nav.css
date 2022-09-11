@@ -1,4 +1,7 @@
 /* NAV BAR */
+* {
+  color: black;
+}
 body {
   margin: 0px;
   overflow: auto;

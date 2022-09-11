@@ -13,7 +13,6 @@ import "swiper/css/scrollbar";
 
 function CreateSwiper({ children }) {
   //state to change go to another slide
-  console.log(children);
   const [swiper, setSwiper] = useState(false);
 
   //swiper btns refs
@@ -62,12 +61,10 @@ function CreateSwiper({ children }) {
           swiper.navigation.destroy();
           swiper.navigation.init();
           swiper.navigation.update();
-          console.log(swiper);
         })
       }
       onSlideChange={() => {
         setSwiper(!swiper);
-        console.log(swiper);
       }}
     >
       {children}

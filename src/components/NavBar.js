@@ -1,5 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
+import { useRef } from "react";
+import { Link } from "react-router-dom";
 function NavBar() {
+  const [searchInput, setSearchInput] = useState("");
+  const searchChangeHandler = (e) => {
+    setSearchInput(e.target.value);
+  };
+  const searchSubmit = (e) => {
+    console.log("submit");
+    console.log(e);
+    e.preventDefault();
+  };
   return (
     // Nav Bar
     <nav className="nav">
@@ -36,8 +47,17 @@ function NavBar() {
               placeholder="Search for anything"
               id="search-input"
               className="search-input search-icon"
+              value={searchInput}
+              onChange={searchChangeHandler}
             />
-            <button className="nav-btn nav-form-button">Search</button>
+            <Link to={`search/${searchInput}`}>
+              <button
+                className="nav-btn nav-form-button"
+                onSubmit={searchSubmit}
+              >
+                Search
+              </button>
+            </Link>
           </form>
         </li>
         {/*Udemy Business link*/}

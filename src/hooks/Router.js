@@ -9,14 +9,21 @@ function Router() {
       element: <HomePage />,
       children: [
         {
-          path: "course/:id",
-          element: <CoursePage />,
+          path: "search/:searchInput",
+          element: <HomePage />,
+        },
+        {
+          path: "search/",
+          element: <HomePage />,
         },
       ],
     },
+    {
+      path: "course/:id",
+      element: <CoursePage />,
+    },
     { path: "*", element: <h1>404</h1> },
   ]);
-  console.log(element);
   return element;
 }
 

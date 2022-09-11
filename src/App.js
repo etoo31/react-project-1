@@ -11,7 +11,6 @@ export const CoursesContext = React.createContext();
 function App() {
   const [courses, getCourses] = useState([]);
   DataFetching(courses, getCourses);
-  console.log(courses);
   return (
     <div className="App">
       <CoursesContext.Provider value={courses}>
