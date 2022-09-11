@@ -7,6 +7,7 @@ import { CoursesContext } from "../../App";
 import Spinner from "./Spinner";
 import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
+import InnerCard from "./InnerCard";
 
 function SubjectInfo() {
   //courses data
@@ -35,11 +36,14 @@ function SubjectInfo() {
   //get displayed courses and make a card and a slide for each course
   let displayedCoursesSlides = displayedCourses.length ? (
     displayedCourses.map((course) => (
-      <SwiperSlide key={course.id}>
-        <Link className="card-link" to={`/course/${course.id}`}>
-          <Card {...course}></Card>
-        </Link>
-      </SwiperSlide>
+      <>
+        <SwiperSlide key={course.id}>
+          <Link className="card-link" to={`/course/${course.id}`}>
+            <Card {...course}></Card>
+          </Link>
+          <InnerCard {...course} />
+        </SwiperSlide>
+      </>
     ))
   ) : (
     <Spinner />

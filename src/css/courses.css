@@ -10,7 +10,8 @@
 }
 .subject-info {
   border: 1px solid black;
-  overflow: hidden;
+  overflow-x: clip;
+  overflow-y: visible;
 }
 .explore-more {
   padding: 1%;
@@ -88,10 +89,6 @@
 .next:hover {
   opacity: 1;
 }
-.card:hover {
-  background-color: rgb(244, 238, 239);
-  transition: 1s;
-}
 
 .loader-container {
   width: 75%;
@@ -122,4 +119,103 @@
 }
 .card-link {
   text-decoration: none;
+}
+
+/*inner card*/
+.inner-card {
+  position: absolute;
+  border: 1px solid black;
+  width: 300px;
+  z-index: 1000;
+  bottom: 100%;
+  background-color: white;
+  display: none;
+}
+.course-title {
+  font-weight: bold;
+}
+.last-update {
+  color: #69958e;
+  font-size: 80%;
+}
+.last-update-date {
+  color: #1e6055;
+  font-weight: bold;
+}
+.total-hours {
+  color: #6a6f73;
+  font-size: 80%;
+}
+.course-description {
+  font-size: 90%;
+}
+.inner-card-button {
+  background-color: #5624d0;
+  color: white;
+  font-weight: bold;
+  width: 80%;
+  padding: 3%;
+  margin: 3% 2% 3% 0%;
+}
+.inner-card-button:hover {
+  background-color: #3306a5;
+  z-index: 10;
+}
+.heart-container {
+  border: 1px solid black;
+  border-radius: 48%;
+  width: 50px;
+  text-align: center;
+  position: relative;
+}
+.favorite {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+  font-size: 200%;
+  position: absolute;
+  top: 22%;
+  left: 16%;
+}
+.inner-card-container {
+  margin-top: 7%;
+  margin-bottom: 0%;
+  z-index: 100;
+}
+.arrow-container {
+  position: relative;
+  width: 50px;
+  height: 20px;
+  border: 1px white solid;
+}
+.arrow {
+  width: 30px;
+  height: 30px;
+  border: 1px black solid;
+  border-left: white;
+  border-top: white;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: -91%;
+  left: 20%;
+  background-color: white;
+  z-index: 10;
+}
+.swiper {
+  overflow: visible !important;
+}
+.swiper-wrapper {
+  overflow: visible;
+}
+.swiper-slide {
+  overflow: visible;
+}
+.swiper-slide:hover .inner-card {
+  display: block;
+}
+.correct-icon {
+  width: 5px !important;
+}
+.correct {
+  margin-right: 10%;
 }
