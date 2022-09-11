@@ -11,7 +11,7 @@ function HeadSection() {
           <p>Courses start at E£169.99. Get your new-student offer now.</p>
         </div>
         {/*Alarm image*/}
-        <div className="container alarm">
+        <div className="alarm">
           <img src={alarmImage} alt="alarm" className="img-fluid"></img>
         </div>
       </div>

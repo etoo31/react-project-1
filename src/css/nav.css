@@ -117,7 +117,14 @@ body {
   margin: 0px;
   display: none;
 }
-
+.fa-solid {
+  width: 0px;
+}
+.star,
+.cart,
+.network {
+  width: 15px;
+}
 
 /*======================= 1466px ======================*/
 @media only screen and (max-width: 1466px) {
@@ -201,6 +208,9 @@ body {
     display: none;
   }
 
+  .nav-btns {
+    display: none;
+  }
   .nav-btn {
     display: none;
   }
@@ -234,6 +244,9 @@ body {
     display: none !important;
   }
   .search-nav-bar-icon {
+    display: none;
+  }
+  .nav-items {
     display: none;
   }
 }

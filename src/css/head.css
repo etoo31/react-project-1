@@ -20,7 +20,7 @@
 }
 .alarm {
   position: absolute;
-  right: -59%;
+  right: 0%;
   bottom: 0%;
 }
 .abroad-courses-section {
@@ -134,8 +134,8 @@
   .alarm {
     position: absolute;
     right: 17%;
-    top: 1%;
-    width: 65%;
+    top: 2%;
+    width: 56%;
   }
 }
 

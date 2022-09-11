@@ -65,7 +65,7 @@ function NavBar() {
           <button className="nav-btn">Log in</button>
           <button className="nav-btn sign-up-btn">Sign up</button>
           <button className="nav-btn">
-            <i className="fa-solid fa-globe"></i>
+            <i className="network fa-solid fa-globe"></i>
           </button>
         </li>
       </ul>
