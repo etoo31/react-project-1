@@ -11,6 +11,7 @@ import WhatYouWillLearn from "../components/course-page/WhatYouWillLearn";
 import CourseContent from "../components/course-page/CourseContent";
 import Requirments from "../components/course-page/Requirments";
 import Description from "../components/course-page/Description";
+import Instructor from "../components/course-page/Instructor";
 
 function CoursePage() {
   const courseId = useParams();
@@ -31,6 +32,7 @@ function CoursePage() {
       <CourseContent {...pageCourse} />
       <Requirments {...pageCourse} />
       <Description {...pageCourse} />
+      <Instructor {...pageCourse} />
     </>
   );
 }
