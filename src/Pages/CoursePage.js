@@ -13,6 +13,7 @@ import Requirments from "../components/course-page/Requirments";
 import Description from "../components/course-page/Description";
 import Instructor from "../components/course-page/Instructor";
 import StudentFeedBack from "../components/course-page/StudentFeedBack";
+import Reviews from "../components/course-page/Reviews";
 
 function CoursePage() {
   const courseId = useParams();
@@ -35,6 +36,7 @@ function CoursePage() {
       <Description {...pageCourse} />
       <Instructor {...pageCourse} />
       <StudentFeedBack />
+      <Reviews {...pageCourse} />
     </>
   );
 }

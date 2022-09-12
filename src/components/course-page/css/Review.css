@@ -1,0 +1,123 @@
+.review-card-container {
+  padding: 1%;
+  border-bottom: 1px rgba(0, 0, 0, 0.1) solid;
+}
+.reviews-container {
+  width: 50%;
+  margin-top: 1%;
+  margin-left: 190px;
+  position: relative;
+}
+.reviews-text {
+  font-weight: bold;
+  color: black;
+  font-size: 150%;
+}
+.review-search-form {
+  height: 100px;
+}
+.review-search-input {
+  width: 90%;
+  height: 50px;
+}
+.review-search-button {
+  height: 50px;
+  width: 50px;
+  background-color: black;
+  color: white;
+}
+.review-search-icon {
+  width: 20px;
+}
+.review-show-more-btn {
+  font-weight: bold;
+  border: 1px solid black;
+  background-color: white;
+  width: 100%;
+  padding: 1%;
+  margin-top: 1%;
+}
+.cirlce-review {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+}
+.circle-review-name {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+.review-card-container {
+  display: flex;
+}
+
+.name-rating-comments-helpful-like-container {
+  margin-left: 10px;
+}
+.reviewer-name {
+  font-weight: bold;
+}
+.review-card-rating {
+  width: 20px;
+  color: #e59819;
+}
+.review-card-star-container {
+  display: flex;
+  margin-top: 1%;
+}
+.review-comment {
+  margin-top: 1%;
+}
+.helpful {
+  font-size: 80%;
+  color: #525355;
+}
+.like-dislike-report {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+.like-container {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  align-items: center;
+  position: relative;
+}
+.like-dislike {
+  width: 40px;
+  font-size: 100%;
+  position: absolute;
+  left: 30%;
+  top: 30%;
+}
+.review-Report {
+  text-decoration: underline;
+}
+@media only screen and (max-width: 800px) {
+  .reviews-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .reviews-container {
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .reviews-container {
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+  }
+}
