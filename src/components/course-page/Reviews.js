@@ -37,7 +37,7 @@ function Reviews({ reviews }) {
       {shownReveiws}
       {showMore ? unShownReveiws : ""}
       <button class="review-show-more-btn" onClick={toggleShow}>
-        Show more
+        Show {showMore ? "Less" : "More"}
       </button>
     </div>
   );

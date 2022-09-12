@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useRoutes } from "react-router-dom";
+import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import CoursePage from "../Pages/CoursePage";
 import HomePage from "../Pages/HomePage";
@@ -15,6 +16,7 @@ function Router() {
         <CoursesContext.Provider value={courses}>
           <NavBar />
           <HomePage />
+          <Footer />
         </CoursesContext.Provider>
       ),
       children: [
@@ -24,6 +26,7 @@ function Router() {
             <CoursesContext.Provider value={courses}>
               <NavBar />
               <HomePage />
+              <Footer />
             </CoursesContext.Provider>
           ),
         },
@@ -33,6 +36,7 @@ function Router() {
             <CoursesContext.Provider value={courses}>
               <NavBar />
               <HomePage />
+              <Footer />
             </CoursesContext.Provider>
           ),
         },
@@ -44,6 +48,7 @@ function Router() {
         <CoursesContext.Provider value={courses}>
           <NavBar />
           <CoursePage />
+          <Footer />
         </CoursesContext.Provider>
       ),
     },
