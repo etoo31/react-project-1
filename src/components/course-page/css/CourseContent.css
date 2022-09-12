@@ -60,3 +60,24 @@
 .lesson-content {
   margin-left: 5%;
 }
+
+@media only screen and (max-width: 1080px) {
+  .course-contnet {
+    margin: auto;
+    width: 70%;
+    margin-top: 1%;
+  }
+  .sections-lectures-length-btn {
+    font-size: 90%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .course-contnet {
+    margin: auto;
+    width: 100%;
+    margin-top: 1%;
+  }
+  .sections-lectures-length-btn {
+    font-size: 80%;
+  }
+}
