@@ -99,3 +99,15 @@
     margin-top: 1%;
   }
 }
+@media only screen and (max-width: 500px) {
+  .students-feed-back-container {
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+  }
+  .tube {
+    width: 200px;
+    background-color: #d1d7dc;
+    height: 10px;
+  }
+}
