@@ -19,11 +19,19 @@ function CourseContent(props) {
     for (let i = 0; i < content.length; i++) {
       if (i <= halfSections) {
         array1.push(
-          <CourseContentCard content={content[i]} expandAll={expandAll} />
+          <CourseContentCard
+            key={content[i]}
+            content={content[i]}
+            expandAll={expandAll}
+          />
         );
       } else
         array2.push(
-          <CourseContentCard content={content[i]} expandAll={expandAll} />
+          <CourseContentCard
+            key={content[i]}
+            content={content[i]}
+            expandAll={expandAll}
+          />
         );
     }
     setShownContent(array1);

@@ -9,11 +9,11 @@ import "../css/courses.css";
 import CourseFixedNav from "../components/course-page/CourseFixedNav";
 import WhatYouWillLearn from "../components/course-page/WhatYouWillLearn";
 import CourseContent from "../components/course-page/CourseContent";
+import Requirments from "../components/course-page/Requirments";
 
 function CoursePage() {
   const courseId = useParams();
   const courses = useContext(CoursesContext);
-  console.log(courses);
   const [pageCourse, setPageCourses] = useState({});
   useMemo(() => {
     for (let i = 0; i < courses.length; i++) {
@@ -28,6 +28,7 @@ function CoursePage() {
       <HeadSection {...pageCourse} />
       <WhatYouWillLearn {...pageCourse} />
       <CourseContent {...pageCourse} />
+      <Requirments {...pageCourse} />
     </>
   );
 }

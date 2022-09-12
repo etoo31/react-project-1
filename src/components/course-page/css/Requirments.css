@@ -1,0 +1,35 @@
+.requirments-container {
+  width: 70%;
+  margin-top: 1%;
+  margin-left: 177px;
+}
+.require-container {
+  display: flex;
+  align-items: baseline;
+  padding: 1%;
+}
+.require-dot {
+  width: 10px;
+  font-size: 50%;
+  margin-right: 10px;
+}
+.requirments-container-text {
+  font-weight: bold;
+  color: black;
+  font-size: 150%;
+}
+
+@media only screen and (max-width: 1080px) {
+  .requirments-container {
+    width: 70%;
+    margin: auto;
+    margin-top: 2%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .requirments-container {
+    width: 100%;
+    margin: auto;
+    margin-top: 2%;
+  }
+}
