@@ -50,7 +50,7 @@ function NavBar() {
               value={searchInput}
               onChange={searchChangeHandler}
             />
-            <Link to={`search/${searchInput}`}>
+            <Link to={`/search/${searchInput}`}>
               <button
                 className="nav-btn nav-form-button"
                 onSubmit={searchSubmit}

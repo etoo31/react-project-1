@@ -55,11 +55,11 @@ function HeadSection(props) {
               <span className="last-updated">{props.lastUpdate}</span>
             </span>
             <span>
-              <i class="world-icon fa-solid fa-globe"></i>
+              <i className="world-icon fa-solid fa-globe"></i>
               <span>English</span>
             </span>
             <span>
-              <i class="subtitle fa-regular fa-closed-captioning"></i>
+              <i className="subtitle fa-regular fa-closed-captioning"></i>
               <span>English</span>
             </span>
           </div>
@@ -131,25 +131,25 @@ function HeadSection(props) {
           </div>
           <div>
             <span>
-              <i class="download-icon fa-solid fa-file-arrow-down"></i>
+              <i className="download-icon fa-solid fa-file-arrow-down"></i>
             </span>
             <span>3 downloadable resources</span>
           </div>
           <div>
             <span>
-              <i class="infinity-icon fa-solid fa-infinity"></i>
+              <i className="infinity-icon fa-solid fa-infinity"></i>
             </span>
             <span>Full lifetime access</span>
           </div>
           <div>
             <span>
-              <i class="mobile-icon fa-solid fa-mobile"></i>
+              <i className="mobile-icon fa-solid fa-mobile"></i>
             </span>
             <span>Access on mobile and TV</span>
           </div>
           <div>
             <span>
-              <i class="trophy-icon fa-solid fa-trophy"></i>
+              <i className="trophy-icon fa-solid fa-trophy"></i>
             </span>
             <span>Certificate of completion</span>
           </div>

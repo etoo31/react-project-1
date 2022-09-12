@@ -1,0 +1,62 @@
+.course-contnet {
+  margin: auto;
+  width: 50%;
+  margin-top: 1%;
+  margin-left: 190px;
+}
+.course-content-text {
+  color: #7f8386;
+  font-weight: bold;
+  font-size: 150%;
+  margin: 2% 0%;
+}
+.sections-lectures-length-and-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.sections-lectures-length {
+  color: #7f8386;
+  font-size: 90%;
+}
+.sections-lectures-length-btn {
+  border: 0px;
+  background-color: white;
+  text-decoration: underline;
+  color: #5624d0;
+  font-weight: bold;
+}
+.show-more-btn {
+  width: 100%;
+  background-color: white;
+  padding: 1%;
+  font-weight: bold;
+}
+/*contnet cards */
+.course-content-card-container {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 2%;
+  background-color: #f7f9fa;
+}
+.up-down {
+  width: 10px;
+}
+.course-content-header {
+  margin-left: 10%;
+  font-weight: bold;
+}
+/*lessons*/
+.one-lesson {
+  display: flex;
+  align-items: baseline;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2%;
+}
+.lesson-play {
+  width: 10px;
+}
+.lesson-content {
+  margin-left: 5%;
+}

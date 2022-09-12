@@ -8,6 +8,7 @@ import HeadSection from "../components/course-page/HeadSection";
 import "../css/courses.css";
 import CourseFixedNav from "../components/course-page/CourseFixedNav";
 import WhatYouWillLearn from "../components/course-page/WhatYouWillLearn";
+import CourseContent from "../components/course-page/CourseContent";
 
 function CoursePage() {
   const courseId = useParams();
@@ -26,6 +27,7 @@ function CoursePage() {
       <CourseFixedNav {...pageCourse} />
       <HeadSection {...pageCourse} />
       <WhatYouWillLearn {...pageCourse} />
+      <CourseContent {...pageCourse} />
     </>
   );
 }
