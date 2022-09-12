@@ -10,6 +10,7 @@ import CourseFixedNav from "../components/course-page/CourseFixedNav";
 import WhatYouWillLearn from "../components/course-page/WhatYouWillLearn";
 import CourseContent from "../components/course-page/CourseContent";
 import Requirments from "../components/course-page/Requirments";
+import Description from "../components/course-page/Description";
 
 function CoursePage() {
   const courseId = useParams();
@@ -29,6 +30,7 @@ function CoursePage() {
       <WhatYouWillLearn {...pageCourse} />
       <CourseContent {...pageCourse} />
       <Requirments {...pageCourse} />
+      <Description {...pageCourse} />
     </>
   );
 }

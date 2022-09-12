@@ -14,7 +14,7 @@ function CourseContentCard(props) {
   return (
     <div className="continer-fluid">
       <div className="course-content-card-container" onClick={toggleExpand}>
-        {expand ? (
+        {expand || props.expandAll ? (
           <i className="up-down fa-solid fa-angle-up"></i>
         ) : (
           <i className="up-down fa-solid fa-angle-down"></i>

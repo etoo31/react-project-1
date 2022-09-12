@@ -1,7 +1,4 @@
 /*fixed nav*/
-body {
-  height: 2000px;
-}
 .fixed-nav {
   background-color: black;
   box-shadow: 1px 1px 5px rgb(45, 44, 44);
