@@ -15,6 +15,7 @@
   margin: auto;
   margin-top: 2%;
   margin-bottom: 2%;
+  margin-right: 28%;
 }
 .header-course-introduction {
   font-size: 130%;
@@ -75,7 +76,118 @@
 .header-buy-now {
   display: none;
 }
+/*Header course Card*/
+.header-course-card {
+  width: 350px;
+  background-color: black;
+  color: black;
+  position: absolute;
+  left: 70%;
+  top: 10%;
+}
+.header-card-course-img-container {
+  width: 350px;
+  padding: 0px;
+}
+.header-card-course-img {
+  width: 100%;
+}
+.sticky-container {
+  width: 350px;
+  position: fixed;
+  top: 15%;
+  left: 70%;
+  z-index: 2;
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 5px rgb(235, 235, 235);
+}
+.card-price-container {
+  display: flex;
+  align-items: baseline;
+}
+.card-course-price {
+  font-weight: bold;
+  font-size: 250%;
+}
+.card-course-price-delete {
+  text-decoration: line-through;
+  color: #707578;
+  margin-left: 1%;
+}
+.card-add-to-cart {
+  display: flex;
+}
+.card-add-to-cart-btn {
+  width: 80%;
+  background-color: #a435f0;
+  font-weight: bold;
+  color: white;
+  padding: 3%;
+}
+.card-buy-now-btn {
+  width: 100%;
+  margin: auto;
+  margin-top: 1%;
+  padding: 3%;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  border: 1px solid black;
+}
+.card-heart-container {
+  border: 1px solid black;
+  padding: 4%;
+  margin-left: 1%;
+}
+.card-favorite {
+  width: 25px;
+  font-size: 150%;
+}
+.money-back {
+  width: 60%;
+  margin: auto;
+  margin-top: 3%;
+  font-size: 85%;
+  color: #8f9295;
+}
+.play-icon,
+.file-icon,
+.download-icon,
+.infinity-icon,
+.mobile-icon,
+.trophy-icon {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+.course-include-title {
+  color: #808487;
+  font-weight: bold;
+}
+.try-udemy-business {
+  margin-top: 6%;
+  margin-bottom: 1%;
+  border-top: 1px solid black;
+}
+.five-or-more {
+  color: #7f8386;
+  font-weight: bold;
+}
+.team-access {
+  color: #7f8386;
+}
+.udemy-business-btn {
+  padding: 3%;
+  width: 70%;
+  margin: 5% 6%;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
 @media only screen and (max-width: 1080px) {
+  .header-container {
+    margin: auto;
+  }
   .head-section-course-img {
     display: block;
   }
@@ -112,6 +224,12 @@
   }
   .header-course-introduction {
     font-size: 90%;
+  }
+  .header-course-card {
+    display: none;
+  }
+  .sticky-container {
+    display: none;
   }
 }
 @media only screen and (max-width: 540px) {
