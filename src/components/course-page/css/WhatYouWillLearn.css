@@ -1,0 +1,41 @@
+.will-learn-container {
+  margin: auto;
+  width: 50%;
+  margin-top: 1%;
+  margin-left: 200px;
+  padding: 2%;
+  border: solid 1px black;
+}
+.will-over-view {
+  display: flex;
+  flex-wrap: wrap;
+}
+.will-learn-overview {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+}
+.will-learn {
+  color: #7f8386;
+  font-weight: bold;
+  font-size: 150%;
+  margin: 2%;
+}
+.overview-correct {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1080px) {
+  .will-learn-container {
+    margin: auto;
+    margin-top: 2%;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .will-learn-container {
+    margin: auto;
+    margin-top: 2%;
+    width: 90%;
+  }
+}

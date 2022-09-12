@@ -7,6 +7,7 @@ import { CoursesContext } from "../hooks/Router";
 import HeadSection from "../components/course-page/HeadSection";
 import "../css/courses.css";
 import CourseFixedNav from "../components/course-page/CourseFixedNav";
+import WhatYouWillLearn from "../components/course-page/WhatYouWillLearn";
 
 function CoursePage() {
   const courseId = useParams();
@@ -24,6 +25,7 @@ function CoursePage() {
     <>
       <CourseFixedNav {...pageCourse} />
       <HeadSection {...pageCourse} />
+      <WhatYouWillLearn {...pageCourse} />
     </>
   );
 }
