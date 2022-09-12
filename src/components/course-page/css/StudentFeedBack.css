@@ -1,0 +1,101 @@
+.students-feed-back-container {
+  width: 50%;
+  margin-top: 1%;
+  margin-left: 190px;
+  position: relative;
+}
+.students-feed-back-text {
+  font-weight: bold;
+  color: black;
+  font-size: 150%;
+}
+.feedback-star {
+  width: 10px;
+  color: #e59819;
+  font-weight: bold;
+  font-size: 100%;
+  margin-right: 15px;
+  align-self: left;
+}
+.feedback-number {
+  font-size: 500%;
+  font-weight: bold;
+  margin-left: 0px;
+  color: #b4690e;
+}
+.feedback-ratting-text {
+  color: #b4690e;
+  font-weight: bold;
+  font-size: 100%;
+  margin-left: 8px;
+}
+.total-rate-tube-container {
+  display: flex;
+}
+.tube-and-tube-stars-container {
+  align-items: baseline;
+  margin-top: 1%;
+}
+.tube {
+  width: 300px;
+  background-color: #d1d7dc;
+  height: 10px;
+}
+.tube1 {
+  width: 70%;
+  height: 100%;
+  background-color: #6a6f73;
+  z-index: 1;
+}
+.tube2 {
+  width: 60%;
+  height: 100%;
+  background-color: #6a6f73;
+  z-index: 1;
+}
+.tube3 {
+  width: 50%;
+  height: 100%;
+  background-color: #6a6f73;
+  z-index: 1;
+}
+.tube4 {
+  width: 30%;
+  height: 100%;
+  background-color: #6a6f73;
+  z-index: 1;
+}
+.tube5 {
+  width: 20%;
+  height: 100%;
+  background-color: #6a6f73;
+  z-index: 1;
+}
+.tube-stars-contianer {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.tube-precentage {
+  margin-left: 10px;
+  text-decoration: underline;
+  color: #5624d0;
+}
+.tube-stars {
+  width: 10px;
+  color: #e59819;
+  margin: 5px;
+}
+@media only screen and (max-width: 800px) {
+  .students-feed-back-container {
+    width: 90%;
+    margin: auto;
+    margin-top: 1%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .students-feed-back-container {
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+  }
+}
