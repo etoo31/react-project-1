@@ -1,5 +1,6 @@
 import React from "react";
 import alarmImage from "../../img/alarm1.png";
+import "../../css/head.css";
 
 function HeadSection() {
   return (

@@ -41,6 +41,7 @@ export default function CardRating(props) {
     <div className="d-flex">
       <span className="rating">{props.rating}</span>
       <span>{stars}</span>
+      {props.children}
     </div>
   );
 }

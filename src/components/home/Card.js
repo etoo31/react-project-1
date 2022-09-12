@@ -3,7 +3,7 @@ import CardAuthor from "./CardAuthor";
 import CardHeader from "./CardHeader";
 import CardImg from "./CardImg";
 import CardPrice from "./CardPrice";
-import CardRating from "./CardRating";
+import CardRating from "../CardRating";
 
 export default function Card(props) {
   /**

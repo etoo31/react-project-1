@@ -3,7 +3,7 @@ import SubjectHeader from "./SubjectHeader";
 import Card from "./Card";
 import { SwiperSlide } from "swiper/react";
 import CreateSwiper from "./CreateSwiper";
-import { CoursesContext } from "../../App";
+import { CoursesContext } from "../../hooks/Router";
 import Spinner from "./Spinner";
 import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
@@ -36,14 +36,12 @@ function SubjectInfo() {
   //get displayed courses and make a card and a slide for each course
   let displayedCoursesSlides = displayedCourses.length ? (
     displayedCourses.map((course) => (
-      <>
-        <SwiperSlide key={course.id}>
-          <Link className="card-link" to={`/course/${course.id}`}>
-            <Card {...course}></Card>
-          </Link>
-          <InnerCard {...course} />
-        </SwiperSlide>
-      </>
+      <SwiperSlide key={course.id}>
+        <Link className="card-link" to={`/course/${course.id}`}>
+          <Card {...course}></Card>
+        </Link>
+        <InnerCard {...course} />
+      </SwiperSlide>
     ))
   ) : (
     <Spinner />

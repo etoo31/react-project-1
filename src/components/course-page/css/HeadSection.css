@@ -1,0 +1,30 @@
+.head-section-container {
+  background-color: black;
+  color: white;
+}
+.header-course-title {
+  font-weight: bold;
+  font-size: 200%;
+}
+.explanation-mark {
+  width: 10px;
+  margin-right: 9px;
+}
+.header-container {
+  width: 60%;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.header-course-introduction {
+  font-size: 130%;
+}
+.rating-count {
+  color: #7697ec;
+}
+.created-by-author-company {
+  color: #7697ec;
+}
+.world-icon {
+  width: 10px;
+}

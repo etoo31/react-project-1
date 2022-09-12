@@ -35,6 +35,7 @@
   margin: 0px;
   padding: 0px;
   font-weight: bold;
+  color: black;
 }
 .course-author {
   color: #737873;
@@ -51,9 +52,11 @@
 .card-price {
   font-weight: bold;
   margin-right: 1%;
+  color: black;
 }
 .price-delete {
   text-decoration: line-through;
+  color: black;
 }
 
 /*Swiper css*/
