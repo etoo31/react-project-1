@@ -7,10 +7,73 @@ body {
   box-shadow: 1px 1px 5px rgb(45, 44, 44);
   color: white;
   position: fixed;
-  top: 1%;
-  padding: 0.2%;
+  top: 0%;
+  padding: 0.4%;
   z-index: 1;
 }
 .course-title-nav {
   font-weight: bold;
+}
+.course-price-container {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  right: 120px;
+  bottom: 20px;
+  display: none;
+}
+.nav-buy-now-btn {
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  padding: 10px;
+  bottom: 20px;
+  display: none;
+}
+.course-price {
+  font-size: 130%;
+}
+.course-price-delete {
+  font-size: 90%;
+  text-align: right;
+  text-decoration: line-through;
+  color: #828689;
+}
+.rating-count-student {
+  display: flex;
+}
+@media only screen and (max-width: 1080px) {
+  .fixed-nav {
+    position: fixed;
+    height: 71px;
+    top: 91%;
+  }
+  .course-price-container {
+    display: block;
+  }
+  .nav-buy-now-btn {
+    display: block;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .rating-count-student {
+    display: none;
+  }
+  .course-title-nav {
+    display: none;
+  }
+  .fixed-nav {
+    background-color: white;
+  }
+  .course-price {
+    color: black;
+  }
+  .course-price-container {
+    right: 80%;
+  }
+  .nav-buy-now-btn {
+    color: white;
+    background-color: black;
+    width: 75%;
+  }
 }

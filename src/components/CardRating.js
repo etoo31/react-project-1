@@ -38,7 +38,7 @@ export default function CardRating(props) {
     1- course rating 
     2- array of stars*/
   return (
-    <div className="d-flex">
+    <div className="d-flex ratting-container">
       <span className="rating">{props.rating}</span>
       <span>{stars}</span>
       {props.children}

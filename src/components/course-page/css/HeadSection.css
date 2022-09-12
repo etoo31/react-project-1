@@ -28,4 +28,111 @@
 .world-icon {
   width: 10px;
 }
-
+.head-section-course-img {
+  display: none;
+}
+.explanation-mark {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+.world-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.subtitle {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header-price-container {
+  display: flex;
+  font-weight: bold;
+  align-items: baseline;
+  display: none;
+}
+.header-course-price {
+  font-size: 200%;
+}
+.header-course-price-delete {
+  text-decoration: line-through;
+  margin-left: 1%;
+}
+.header-buy-now-btn {
+  width: 80%;
+  background-color: #a435f0;
+  font-weight: bold;
+  color: white;
+  padding: 3%;
+}
+.header-heart-container {
+  border: 1px solid white;
+  padding: 4%;
+  margin-left: 1%;
+}
+.header-favorite {
+  width: 25px;
+  font-size: 150%;
+}
+.header-buy-now {
+  display: none;
+}
+@media only screen and (max-width: 1080px) {
+  .head-section-course-img {
+    display: block;
+  }
+  .header-buy-now {
+    display: block;
+    display: flex;
+  }
+  .header-price-container {
+    display: block;
+    display: flex;
+  }
+  .last-world-subtitle {
+    flex-direction: column;
+  }
+  .explanation-mark {
+    margin-left: 0px;
+    margin-right: 2%;
+  }
+  .world-icon {
+    margin-left: 0px;
+    margin-right: 2%;
+  }
+  .subtitle {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+  .head-seaction-img {
+    width: 100%;
+    height: 100%;
+  }
+  .header-course-title {
+    font-weight: bold;
+    font-size: 150%;
+  }
+  .header-course-introduction {
+    font-size: 90%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .header-course-title {
+    font-weight: bold;
+    font-size: 110%;
+  }
+  .ratting-container {
+    width: 120%;
+  }
+  .explanation-mark {
+    margin-right: 5%;
+  }
+  .world-icon {
+    margin-right: 5%;
+  }
+  .subtitle {
+    margin-right: 5%;
+  }
+  .header-favorite {
+    width: 20px;
+    font-size: 100%;
+  }
+}
