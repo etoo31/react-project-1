@@ -44,6 +44,7 @@
     position: fixed;
     height: 71px;
     top: 91%;
+    width: 100%;
   }
   .course-price-container {
     display: block;
@@ -72,5 +73,20 @@
     color: white;
     background-color: black;
     width: 75%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .fixed-nav {
+    width: 280px;
+    width: 100%;
+  }
+  .nav-buy-now-btn {
+    width: 70%;
+  }
+  .course-price {
+    font-size: 100%;
+  }
+  .course-price-delete {
+    font-size: 70%;
   }
 }

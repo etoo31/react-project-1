@@ -22,7 +22,6 @@
 }
 .review-search-button {
   height: 50px;
-  width: 50px;
   background-color: black;
   color: white;
 }
@@ -38,7 +37,7 @@
   margin-top: 1%;
 }
 .cirlce-review {
-  width: 50px;
+  width: 7%;
   height: 50px;
   background-color: black;
   color: white;
@@ -100,11 +99,25 @@
 .review-Report {
   text-decoration: underline;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1024px) {
+  .cirlce-review {
+    width: 10%;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .cirlce-review {
+    width: 15%;
+  }
+}
+@media only screen and (max-width: 820px) {
   .reviews-container {
     width: 90%;
     margin: auto;
     margin-top: 1%;
+  }
+  .cirlce-review {
+    width: 7%;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -114,10 +127,31 @@
     margin-top: 1%;
   }
 }
+@media only screen and (max-width: 540px) {
+  .cirlce-review {
+    width: 12%;
+  }
+}
 @media only screen and (max-width: 500px) {
   .reviews-container {
     width: 100%;
     margin: auto;
     margin-top: 1%;
+  }
+  .review-search-input {
+    width: 87%;
+  }
+  .cirlce-review {
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .cirlce-review {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .cirlce-review {
+    width: 30%;
   }
 }

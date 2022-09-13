@@ -110,4 +110,28 @@
     background-color: #d1d7dc;
     height: 10px;
   }
+  .tube-feedback {
+    width: 100%;
+  }
+  .tube-and-tube-stars-container {
+    width: 100%;
+  }
+  .feedback-number {
+    font-size: 300%;
+  }
+  .feedback-star-container {
+    width: 100%;
+  }
+  .feedback-number-stars {
+    width: 100%;
+  }
+  .tube {
+    width: 50%;
+    background-color: #d1d7dc;
+    height: 10px;
+  }
+  .total-rate-tube-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
